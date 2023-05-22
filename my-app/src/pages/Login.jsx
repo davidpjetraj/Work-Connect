@@ -24,7 +24,7 @@ export const Login = () => {
                 <button className="forgot">Forgot Password</button>
             </div>
             
-            <button className="signin">Sign In</button>
+            <button className="signin"><Link to='/app' className="loginbutton">Sign In</Link></button>
             <div className="under">
                 <h2>Log In via</h2>
             <div className="iconat">
