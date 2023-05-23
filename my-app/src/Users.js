@@ -1,9 +1,8 @@
 import {Header} from './pages/Header';
 import {Sidebar} from './pages/Sidebar';
-import { Home } from './pages/Home'
 import './App.css';
 
-function App() {
+function User() {
   return (
     <div className="App">
       <header className="App-header">
@@ -12,7 +11,7 @@ function App() {
       < Header />
             <div className='Body'>
                 < Sidebar />
-                < Home />
+                
             </div>
       </div>
       </header>
@@ -20,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default User;
