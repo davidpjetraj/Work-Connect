@@ -8,6 +8,7 @@ import User from './Users';
 import Rate from './RateJobs'
 import Jobs from './Jobs';
 import KrijoVP from './KrijoVP';
+import Register from './Register';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
       <Route path='/rate' element={ < Rate />} />
       <Route path='/jobs' element= { < Jobs />} />
       <Route path='/krijo' element= { < KrijoVP />} />
+      <Route path='/register' element={ < Register /> }/>
     </Routes>
   </BrowserRouter>
 );

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Krijo = () => {
     return(
         <div className="krijosite">
@@ -26,15 +28,14 @@ export const Krijo = () => {
                     <input type="range" id="numriVP" min={0} max={999} />
                     <h3><output id="value"/></h3>
                     </div>
-                    <div>
-                    <h4>Mosha</h4>
-                    <input type="range" id="mosha" min={18} max={65} />
-                    <h3>l<output id="value1"/></h3></div>
                 </div>
                 </div>
                 <div>
                     <button>PUBLIKO</button>
                 </div>
+            </div>
+            <div className="buttonik">
+              <button><Link to='/jobs' className="loginbutton">Go Back</Link></button>
             </div>
         </div>
 
@@ -42,16 +43,14 @@ export const Krijo = () => {
     )
 }
 
-const value = document.querySelector("#value")
-const numriVP = document.querySelector("#numriVP")
-value.textContent = numriVP.value
-numriVP.addEventListener("input", (event) => {
-  value.textContent = event.target.value
-})
-
-const value1 = document.querySelector("#value1")
-const mosha = document.querySelector("#mosha")
-value1.textContent = mosha.value1
-mosha.addEventListener("input", (event) => {
-  value1.textContent = event.target.value1
-})
+/**  ?? 
+newFunction()
+function newFunction() {
+  const value = document.querySelector("#value")
+  const numriVP = document.querySelector("#numriVP")
+  value.textContent = numriVP.value
+  numriVP.addEventListener("input", (event) => {
+    value.textContent = event.target.value
+  })
+}
+      **/

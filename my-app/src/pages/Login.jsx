@@ -33,7 +33,7 @@ export const Login = () => {
                 <RiAppleFill className="icona"/>
             </div>
             <div className="creatediv">
-                <h5>Dosen't have an account?</h5><button className="create">Create Account</button>
+                <h5>Dosen't have an account?</h5><button className="create"><Link to='/register'>Create Account</Link></button>
             </div>
             </div>
         </form>
