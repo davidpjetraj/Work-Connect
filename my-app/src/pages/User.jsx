@@ -1,9 +1,10 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const User = () => {
     return(
-        <div>
+        <div className="usermain">
             <div className="userbox">
                 <div className="first">
                     <FaUserCircle className="fotoja" /> <br /><br />
@@ -23,6 +24,9 @@ export const User = () => {
                     <input type="text" placeholder="Higher Education" />
                     <input type="text" placeholder="Experience"/>
                 </div>
+            </div>
+            <div className="userrate">
+                <Link to='/rate' className="userratebutton" >Rate Jobs</Link>
             </div>
         </div>
     )

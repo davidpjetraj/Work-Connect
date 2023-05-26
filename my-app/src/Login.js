@@ -15,4 +15,4 @@ function Log() {
     );
 }
 
-export default Login;
+export default Log;

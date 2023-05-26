@@ -70,7 +70,7 @@ header .name {
 }
 
 .sidebari {
-  height: 89.9vh;
+  height: 89.7vh;
   width: 5.5vw;
   padding: 0 0.6vw;
   display: flex;
@@ -116,8 +116,6 @@ header .name {
 .searchi button{
   width: 130px;
   height: 35px;
-  font-family: 'Inter';
-  font-size: 15px;
   color: #ffff;
   background: #1A8FDD;
   border-radius: 10px;
@@ -127,7 +125,6 @@ header .name {
   border: none;
   cursor: pointer; 
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
@@ -193,7 +190,9 @@ header .name {
 }
 
 /****************************** Users CSS **************************** */
-
+.usermain{
+  display: flex;
+}
 .userbox{
   width: 700px;
   height: 600px;
@@ -247,4 +246,352 @@ header .name {
   font-size: 15px;
   line-height: 19px;
   color: #89928E;
+}
+
+.userrate{
+  margin-top: 65px;
+  padding-left: 5vw;
+}
+.userrate .userratebutton {
+  width: 100px;
+  height: 40px;
+  background: #1A8FDD;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+.userrate a{
+  text-decoration: none;
+}
+
+/****************************** Rate CSS **************************** */
+.ratearena{
+  padding: 28px 0 0 93px;
+  display: flex;
+  gap: 30px 166px;
+  flex-wrap: wrap;
+}
+.ratebox{
+  width: 231px;
+  height: 203px;
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 15px;
+  box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.96);
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.96);
+  -moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.96);
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.145em;
+}
+.ratebox .logot{
+  width: 50px;
+  height: 50px;
+}
+
+.figmalogo{
+  width: 40px;
+  height: 40px;
+  background-color: #272727;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 50px;
+  color: #666;
+}
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+.ratecomment{
+  margin-top: 7vh;
+  padding-top: 3vh;
+  padding-left: 4vw;
+  border-top: 1px solid #2727273b;
+}
+.ratecomment h5{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: #7B5B5B;
+  padding-bottom: 2vh;
+}
+.ratecomment textarea{
+  min-width: 75vw;
+  min-height: 17vh;
+  max-width: 75vw;
+  max-height: 17vh;
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.96);
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.96);
+  -moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.96);
+}
+
+.buttonatrate{
+  padding-top: 4vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9vh;
+}
+.buttonatrate .buttoni{
+  width: 100px;
+  height: 40px;
+  background: #1A8FDD;
+  border-radius: 8px;
+  color: #fff;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+.buttonatrate a {
+  text-decoration: none;
+}
+
+/****************************** Jobs CSS **************************** */
+.jobpos{
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jobcube{
+  width: 758px;
+  height: 475px;
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 12px;
+  padding: 25px 0 0 42px;
+}
+.kerkofield input{
+  width: 185px;
+  height: 40px;
+  padding-left: 15px ;
+  background: #ECF3F5;
+  border-radius: 10px;
+  border: none;
+
+  font-family: 'Quicksand';
+  font-weight: 400;
+  font-size: 15px;
+  color: #89928E;
+}
+.kerkofield {
+  width: 719px;
+  display: flex;
+  justify-content: space-between;
+}
+.searchb{
+  width: 150px;
+  height: 40px;
+  background: #1A8FDD;
+  border-radius: 5px;
+  border: none;
+  margin-left: 283px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: 'Quicksand';
+  font-weight: 700;
+}
+
+.rezultatet{
+  width: 719px;
+  display: flex;
+  justify-content: space-between;
+}
+.rezultatet input {
+  width: 534px;
+  height: 40px;
+  padding-left: 15px;
+  background: #ECF3F5;
+  border-radius: 10px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #89928E;
+  border: none;
+}
+.rezultatet button {
+  width: 100px;
+  height: 40px;
+  background: #1A8FDD;
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #363636;
+  border: none;
+}
+.rezultatetgap{
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.jobcube h2{
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+.krijovp{
+  position: absolute;
+  top: 150px;
+  right: 120px;
+}
+.krijovp button{
+  width: 120px;
+  height: 40px;
+  background: #1A8FDD;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Quicksand';
+}
+.krijovp a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/****************************** KrijoVP CSS **************************** */
+.krijosite{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+.krijocube{
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 12px;
+  width: 1090px;
+  height: 450px;
+  padding: 20px 0 0 25px;
+}
+.krijoin{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 85px;
+  padding-left: 65px;
+  margin-top: 15px;
+}
+.krijoin input {
+  width: 235px;
+  height: 40px;
+  background: #ECF3F5;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+.krijocube h1{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+
+.krijols{
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.krijochb{
+  width: 120px;
+  height: 70px;
+  padding: 10px 0 0 15px;
+}
+.krijorange{
+  display: flex;
+  gap: 85px;
+  padding-right: 5px;
+}
+.krijorange input {
+  width: 250px;
+  height: 80px;
+  background: red;
+}
+.krijorange div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.krijorange input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.krijorange input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #000000;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+.krijorange input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  margin-top: -8px;
+  background-color: #0f83ff;
+  border-radius: 0.5rem;
+  height: 1.5rem;
+  width: 0.5rem;
 }
