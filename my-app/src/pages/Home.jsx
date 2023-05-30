@@ -1,6 +1,7 @@
 import React from "react"
 import { BiSearch } from "react-icons/bi"
 import Ubtlogo from "../images/Ubtlogo.png";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
     return( 
@@ -10,9 +11,8 @@ export const Home = () => {
                 <input type="search" placeholder="Search ... " /> < BiSearch className="searchicon" />
             </div>
             <div className="buttonat">
-                <button>Kerkoni Pune</button>
-                <button>Aplikoni per Pune</button>
-                <button>Krijo Vendepune</button>
+                <button><Link to="/jobs">Kerkoni Pune</Link></button>
+                <button><Link to="/krijo">Krijo Vendepune</Link></button>
             </div>
         </div>
         <div className="maini">
